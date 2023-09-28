@@ -1,7 +1,7 @@
-a = 0
-b = 0
-for n in range(1, 10000000):
-	a+=((-1)**n)/n
-	b+=(1/(n*(n+1)))
-print a, b
-
+ln2,v2=0,0
+for i in range(1,10000):
+    ln2+=((-1)**i)/i
+print ("Value of -ln2 is : ",ln2)
+for i in range(1,10000):
+    v2+=1/((i)*(i+1))
+print ("Value of 2 is : ",v2)

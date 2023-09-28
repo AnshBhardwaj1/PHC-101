@@ -12,6 +12,6 @@ A = math.acos(cosA)
 B = math.acos(cosB)
 C = math.acos(cosC)
 
-print "Angle A : ", A
-print "Angle B : ", B
-print "Angle C : ", C
+print ("Angle A : ", A)
+print ("Angle B : ", B)
+print ("Angle C : ", C)

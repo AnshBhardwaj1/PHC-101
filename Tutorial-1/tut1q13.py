@@ -1,14 +1,12 @@
-w = float(input("weight(in kg) : "))
-h = float(input("height(in meters) : "))
-bmi = w/(h*h)
-bmi = float(bmi)
-print(bmi)
-if ( bmi < 25.0) :
-	print"Griade 0 (desirable)"
-elif  (bmi < 30.0) :
-	print"Grade 1 (overweight)"
-elif ( bmi <= 40.0) :
-	print"Grade 2 (obese)"
-else :
-	print"Grade 3 (morbidly obese)"
-
+#Your body mass index (BMI) is given by your weight (in kilos) divided by your height (in metres) squared. Write a program to read the weight and height and print out the BMI for each person
+weight=int(input("Enter your weight in kilograms: "))
+height=int(input("Enter your height in metres: "))
+BMI=weight/(height**2)
+if (BMI>40):
+    print (" morbidly obese")
+elif (BMI>30):
+    print (" obese")
+elif (BMI>25):
+    print (" overweight")
+elif (BMI>20):
+    print ("Desirable")

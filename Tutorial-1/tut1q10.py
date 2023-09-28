@@ -4,15 +4,15 @@ g = float(input("g : "))
 
 if(a1 == a2):
     if(g == 90.0):
-        print "Square"
+        print ("Square")
     elif(g == 120.0):
-        print "Hexagonal"
+        print ("Hexagonal")
     else:
-        print "Invalid g"
+        print ("Invalid g")
 elif(g == 90.0):
-    print "Rectangular or Centered Rectangular"
+    print ("Rectangular or Centered Rectangular")
 elif(g == 120):
-    print "Invalid g"
+    print ("Invalid g")
 else:
-    print "Oblique"
+    print ("Oblique")
 

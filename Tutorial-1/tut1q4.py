@@ -1,14 +1,7 @@
-j1 = int(input("j1 : "))
-j2 = int(input("j2 : "))
-a = 0
-b = 0
-if j1 > j2 :
-	 a = abs(j1 - j2)
-	 b = j1 + j2
-if a > b :
-         temp = a
-	 a = b
-	 b = temp
-for i in range(a, (b+1), 1):
-	 print(a)
-	 a+=1
+#Write a program which reads j1 and j2 and returns the output as an array of values from | j1 − j2| to j1 + j2 in steps of unity.
+j1=int(input(""))
+j2=int(input(""))
+array=[]
+for i in range(abs(j1-j2),j1+j2+1):
+    array.append(i)
+print(array)

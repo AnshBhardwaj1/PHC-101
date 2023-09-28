@@ -6,5 +6,5 @@ for i in range(1,n+1):
 print(sum)
 
 formula = n*(n+1)/2
-print "by formula : ", formula
+print ("by formula : ", formula)
 

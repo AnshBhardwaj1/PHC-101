@@ -1,66 +1,54 @@
-n = (input("length of array : "))
-arr = []
-
-for i in range(0, n):
-    x = float(input("Enter element : "))
-    arr.append(x)
-
-def max(n):
-    max = arr[0]
-    for i in range(1, n):
-        if(arr[i] > max):
-            max = arr[i]
+#Write a function which reads a one dimensional array and the number of elements, and returns the following quantities: (i) Maximum (ii) Minimum (iii) average (iv) standard deviation median (vi) sum of all the numbers and vii) product of all the numbers.
+array=[]
+n=int(input("Enter the number of elements: "))
+for i in range(n):
+    array.append(int(input("Enter the element: ")))
+def maximum(array):
+    max=array[0]
+    for i in array:
+        if i>max:
+            max=i
     return max
-
-def min(n):
-    min = arr[0]
-    for i in range(1, n):
-        if(arr[i] < min):
-            min = arr[i]
+def minimum(array):
+    min=array[0]
+    for i in array:
+        if i<min:
+            min=i
     return min
-
-def average(n):
-    sum = 0
-    for i in range(0, n):
-        sum+=arr[i]
-    average = sum/n
-    return average
-
-def sum(n):
-    sum = 0
-    for i in range(n):
-        sum+=arr[i]
+def average(array):
+    sum=0
+    for i in array:
+        sum+=i
+    return sum/len(array)
+def standard_deviation(array):
+    sum=0
+    for i in array:
+        sum+=i
+    mean=sum/len(array)
+    sum=0
+    for i in array:
+        sum+=(i-mean)**2
+    return (sum/len(array))**0.5
+def median(array):
+    array.sort()
+    if len(array)%2==0:
+        return (array[len(array)//2]+array[len(array)//2-1])/2
+    else:
+        return array[len(array)//2]
+def sum(array):
+    sum=0
+    for i in array:
+        sum+=i
     return sum
-def product(n):
-    product = 1
-    for i in range(0, n):
-        product*=arr[i]
+def product(array):
+    product=1
+    for i in array:
+        product*=i
     return product
-def median(n):
-	for r in range(n):
-	    for i in range(n - r - 1):
-        	if(arr[i] < arr[i+1]):
-            		temp = arr[i+1]
-            		arr[i+1] = arr[i]
-            		arr[i] = temp
-	if(n%2 == 0):
-	     return ((arr[int(n/2 - 1)]+arr[int(n/2)])/2)
-	else:
-		return (arr[int((n+1)/2-1)])
-def st_dev(n):
-	sum = 0
-        for i in range(0):
-		sum+=arr[i]
-	avg = sum/n
-	ans = 0
-	for i in range(n):
-		ans+=((arr[i]-avg)**2)/n
-	return ans
-print"max : ", max(n)
-print"min : ", min(n)
-print"average : ", average(n)
-print"sum : ", sum(n)
-print"product : ", product(n)
-print"median : ", median(n) 
-print"standard deviation : ", st_dev(n)
-    
+print("The maximum of the array is ",maximum(array))
+print("The minimum of the array is ",minimum(array))
+print("The average of the array is ",average(array))
+print("The standard deviation of the array is ",standard_deviation(array))
+print("The median of the array is ",median(array))
+print("The sum of the array is ",sum(array))
+print("The product of the array is ",product(array))

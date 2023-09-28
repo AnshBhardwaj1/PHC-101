@@ -47,12 +47,12 @@ for i in range(o):
 print("Sum : ")
 for i in range(o):
     
-        print matrix3[i]
+    print (matrix3[i])
  
         
 print("Product : ")    
 for i in range(o):
     
-        print matrix4[i] 
+    print (matrix4[i])
 
 
