@@ -1,34 +1,20 @@
-def bisection_method(func, a, b):
-
+#In the bisection method to find the root of a function f (x) in the interval (a, b), the approx-
+#imate root in an iteration “i is given by x i = (x+ + x−)/2, where f (x+ ) > 0 and f (x−) < 0.
+#Write a function program whose inputs are a, b (the initial guess) and the function f (x). The
+#function should return the root x r of the equation f (x) = 0.
+def bisection (a, b, fx):
     def f(x):
-        f = eval(func)
+        f = eval(fx)
         return f
-    error_accept = 0.000000001
-    error = float(abs(b-a))
-
-    while error > error_accept:
-        c = (b+a)/2
-
-        if f(a) * f(b) >= 0:
-            print("No root present so bisection will not work")
-            quit()
-
-        elif f(c) * f(a) < 0:
-            b = c
-            error = abs(b-a)
-
-        elif f(c) * f(b) < 0:
-            a = b
-            error = abs(b-a)
-
+    for i in range (10000):
+        x = (a + b)/2
+        if f(x) > 0:
+            b = x
         else:
-            print("Somethong went wrong")
-            quit()
-
-    print("The approx root is at : ", c)
-
-func = input("f(x) : ") #input function as a string  ex- x**2
-a = float(input("a : "))
-b = float(input("b : "))
-bisection_method(func, a, b)
+            a = x
+    print("ans : ", x)
+fx = input("f(x) : ")
+a = int(input("a : "))
+b = int(input("b : "))
+bisection(a, b, fx)
 
