@@ -24,6 +24,6 @@ def sin(x, n):
 r = cos(x , n)
 d = sin(x, n)
 
-print (d)
-print (r)
+print ("Sin is ",d)
+print ("Cos is ",r)
 

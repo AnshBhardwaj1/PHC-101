@@ -1,12 +1,11 @@
 import math
+a = (int(input("Enter a : ")))
+b = (int(input("Enter b : ")))
+c = (int(input("Enter c : ")))
 
-a = input("Enter a : ")
-b = input("Enter b : ")
-c = input("Enter c : ")
-
-cosA = (b**2 + c**2 - a**2)/(2*b*c)
-cosB = (a**2 + c**2 - b**2)/(2*a*c)
-cosC = (b**2 + a**2 - c**2)/(2*b*a)
+cosA = ((b**2) + (c**2) - (a**2))/(2*b*c)
+cosB = ((a**2) + (c**2) - (b**2))/(2*a*c)
+cosC = ((b**2) + (a**2) - (c**2))/(2*b*a)
 
 A = math.acos(cosA)
 B = math.acos(cosB)
