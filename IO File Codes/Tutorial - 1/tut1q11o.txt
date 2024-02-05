@@ -1,0 +1,10 @@
+Power dissipation at 1 is 11.755102040816327
+Power dissipation at 2 is 14.222222222222221
+Power dissipation at 3 is 14.28099173553719
+Power dissipation at 4 is 13.633136094674557
+Power dissipation at 5 is 12.8
+Power dissipation at 6 is 11.95847750865052
+Power dissipation at 7 is 11.168975069252078
+Power dissipation at 8 is 10.448979591836734
+Power dissipation at 9 is 9.799621928166351
+Power dissipation at 10 is 9.216

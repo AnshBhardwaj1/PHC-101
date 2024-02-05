@@ -1,0 +1,7 @@
+The maximum of the array is 98
+The minimum of the array is 12
+The average of the array is 45.0
+The standard deviation of the array is 30.417100453527784
+The median of the array is 35
+The sum of the array is 225
+The product of the array is 53960760

@@ -1,0 +1,6 @@
+velocity at time = 0(in minutes) is 400000
+velocity at time = 5(in minutes) is 403000
+velocity at time = 10(in minutes) is 406000
+velocity at time = 15(in minutes) is 409000
+velocity at time = 20(in minutes) is 412000
+velocity at time = 25(in minutes) is 415000
